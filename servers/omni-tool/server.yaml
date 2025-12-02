@@ -1,0 +1,18 @@
+name: omni-tool
+image: mcp/omni-tool
+type: server
+meta:
+    category: utilities
+    tags:
+        - utilities
+        - converter
+        - color
+        - time
+        - developer-tools
+about:
+    title: Omni Tool
+    description: Universal converter and transformer - convert units, colors, time, crypto, strings, and more. Supports 10+ unit categories, all color formats (Hex, RGB, HSL, Oklch, LAB), JavaScript Date/moment.js output, JWT decoding, and string transformations.
+    icon: https://avatars.githubusercontent.com/u/1238994?v=4
+source:
+    project: https://github.com/barretts/mcp-omni-tool
+    commit: df2cce5

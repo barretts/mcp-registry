@@ -1,0 +1,56 @@
+[
+  {
+    "name": "convert",
+    "description": "Universal converter for Time, Color, Units (length, weight, temp, digital, CSS, crypto, duration, speed, area, volume).",
+    "arguments": [
+      {"name": "value", "type": "string", "desc": "Value to convert (e.g., '10', 'now', '#FF0000', 'in 4 days')"},
+      {"name": "unit", "type": "string", "desc": "Source unit (e.g., 'km', 'px', 'btc', 'mph')"}
+    ]
+  },
+  {
+    "name": "compare",
+    "description": "Compares two values with unit conversions (e.g., 10km vs 5miles).",
+    "arguments": [
+      {"name": "value_a", "type": "string", "desc": "First value"},
+      {"name": "unit_a", "type": "string", "desc": "Unit for value A"},
+      {"name": "value_b", "type": "string", "desc": "Second value"},
+      {"name": "unit_b", "type": "string", "desc": "Unit for value B"}
+    ]
+  },
+  {
+    "name": "transform_string",
+    "description": "Detects encoding (Base64/Hex/JSON) and returns decoded values plus transformations (upper, lower, hashes).",
+    "arguments": [
+      {"name": "text", "type": "string", "desc": "String to transform"}
+    ]
+  },
+  {
+    "name": "analyze_color",
+    "description": "Parses colors (Hex, RGB, HSL, Oklch, etc.) and returns all format conversions plus accessibility analysis.",
+    "arguments": [
+      {"name": "color_input", "type": "string", "desc": "Color in any format (#FF5733, rgb(255,87,51), oklch(0.68 0.21 33))"}
+    ]
+  },
+  {
+    "name": "inspect_jwt",
+    "description": "Decodes a JWT header and payload without verification.",
+    "arguments": [
+      {"name": "token", "type": "string", "desc": "JWT token string"}
+    ]
+  },
+  {
+    "name": "generate_mock_data",
+    "description": "Generates random mock data (uuid, hex, ipv4).",
+    "arguments": [
+      {"name": "data_type", "type": "string", "desc": "Type: uuid, hex, ipv4"},
+      {"name": "count", "type": "integer", "desc": "Number of items to generate"}
+    ]
+  },
+  {
+    "name": "calculate_statistics",
+    "description": "Returns statistics (mean, median, min, max, sum) for a list of numbers.",
+    "arguments": [
+      {"name": "numbers", "type": "array", "desc": "Array of numbers"}
+    ]
+  }
+]
